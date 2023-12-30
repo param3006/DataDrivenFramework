@@ -6,7 +6,7 @@ public class TestClass2 {
 		// TODO Auto-generated method stub
 		System.out.println("Test");
 		System.out.println("Terst2");
-		System.out.println("Tf60505");
+		System.out.println("Tf6005");
 	}
 
 }

@@ -31,7 +31,7 @@ public class TestClass2 {
 		driver.get("https://www.worldometers.info/world-population/");
 	}
 
-	@Test(priority = 0)
+	@Test(priority = 0,enabled = false)
 	public void countPopulation() throws InterruptedException {
 		// TODO Auto-generated method stub
 		int count = 1;

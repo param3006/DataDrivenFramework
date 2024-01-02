@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-01T14:34:08 IST" name="Default suite" finished-at="2024-01-01T14:35:45 IST" duration-ms="96704">
+  <suite started-at="2024-01-02T20:23:25 IST" name="Default suite" finished-at="2024-01-02T20:24:04 IST" duration-ms="38562">
     <groups>
     </groups>
-    <test started-at="2024-01-01T14:34:08 IST" name="Default test" finished-at="2024-01-01T14:35:45 IST" duration-ms="96704">
-      <class name="com.com.Test.TestClass2">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.com.Test.TestClass2@73e9cf30]" started-at="2024-01-01T14:34:08 IST" name="setUp" finished-at="2024-01-01T14:34:27 IST" duration-ms="19470" status="PASS">
+    <test started-at="2024-01-02T20:23:25 IST" name="Default test" finished-at="2024-01-02T20:24:04 IST" duration-ms="38562">
+      <class name="com.Test.corouselHandling">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Test.corouselHandling@3541cb24]" started-at="2024-01-02T20:23:25 IST" name="setUp" finished-at="2024-01-02T20:23:57 IST" duration-ms="31794" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="countPopulation()[pri:0, instance:com.com.Test.TestClass2@73e9cf30]" started-at="2024-01-01T14:34:27 IST" name="countPopulation" finished-at="2024-01-01T14:34:48 IST" duration-ms="20086" status="PASS">
+        <test-method signature="f()[pri:0, instance:com.Test.corouselHandling@3541cb24]" started-at="2024-01-02T20:23:57 IST" name="f" finished-at="2024-01-02T20:24:03 IST" duration-ms="6056" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- countPopulation -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.com.Test.TestClass2@73e9cf30]" started-at="2024-01-01T14:34:48 IST" name="setUp" finished-at="2024-01-01T14:35:22 IST" duration-ms="34730" status="PASS">
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.corouselHandling@3541cb24]" started-at="2024-01-02T20:24:03 IST" name="tearDown" finished-at="2024-01-02T20:24:04 IST" duration-ms="602" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="counttodAndYearPop()[pri:1, instance:com.com.Test.TestClass2@73e9cf30]" started-at="2024-01-01T14:35:22 IST" name="counttodAndYearPop" finished-at="2024-01-01T14:35:45 IST" duration-ms="22342" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- counttodAndYearPop -->
-      </class> <!-- com.com.Test.TestClass2 -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Test.corouselHandling -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

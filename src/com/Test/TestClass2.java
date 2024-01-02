@@ -1,4 +1,4 @@
-package com.com.Test;
+package com.Test;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;

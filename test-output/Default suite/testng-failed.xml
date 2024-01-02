@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.com.Test.TestClass2">
+      <class name="com.Test.corouselHandling">
         <methods>
+          <include name="f"/>
           <include name="setUp"/>
-          <include name="counttodAndYearPop"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.com.Test.TestClass2 -->
+      </class> <!-- com.Test.corouselHandling -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

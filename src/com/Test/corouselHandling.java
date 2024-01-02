@@ -65,6 +65,7 @@ public class corouselHandling {
 		while (corouselBtn.isDisplayed() == true) {
 			corouselBtn.click();
 		}
+		
 		String corouselTxt = "//*[.='" + sectionName
 				+ "']//parent::div//following-sibling::div//descendant::div[@class='sc-51b852f7-19 cwDrLD']/child::div[@class='sc-51b852f7-21 bCWDQF']";
 		List<WebElement> listOfElements = driver.findElements(By.xpath(corouselTxt));

@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-02T21:29:47 IST" name="Default suite" finished-at="2024-01-02T21:30:38 IST" duration-ms="51656">
+  <suite started-at="2024-01-03T16:33:20 IST" name="Default suite" finished-at="2024-01-03T16:33:56 IST" duration-ms="35615">
     <groups>
     </groups>
-    <test started-at="2024-01-02T21:29:47 IST" name="Default test" finished-at="2024-01-02T21:30:38 IST" duration-ms="51656">
-      <class name="com.Test.corouselHandling">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Test.corouselHandling@3541cb24]" started-at="2024-01-02T21:29:47 IST" name="setUp" finished-at="2024-01-02T21:30:19 IST" duration-ms="32362" status="PASS">
+    <test started-at="2024-01-03T16:33:20 IST" name="Default test" finished-at="2024-01-03T16:33:56 IST" duration-ms="35615">
+      <class name="com.Test.svgElementHandling">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.Test.svgElementHandling@2d52216b]" started-at="2024-01-03T16:33:20 IST" name="beforeMethod" finished-at="2024-01-03T16:33:51 IST" duration-ms="30718" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="f()[pri:0, instance:com.Test.corouselHandling@3541cb24]" started-at="2024-01-02T21:30:19 IST" name="f" finished-at="2024-01-02T21:30:38 IST" duration-ms="18630" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="doAction()[pri:0, instance:com.Test.svgElementHandling@2d52216b]" started-at="2024-01-03T16:33:51 IST" name="doAction" finished-at="2024-01-03T16:33:55 IST" duration-ms="4270" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.corouselHandling@3541cb24]" started-at="2024-01-02T21:30:38 IST" name="tearDown" finished-at="2024-01-02T21:30:38 IST" duration-ms="585" status="PASS">
+        </test-method> <!-- doAction -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.Test.svgElementHandling@2d52216b]" started-at="2024-01-03T16:33:55 IST" name="afterMethod" finished-at="2024-01-03T16:33:56 IST" duration-ms="564" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.Test.corouselHandling -->
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.Test.svgElementHandling -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

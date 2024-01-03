@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Test.corouselHandling">
+      <class name="com.Test.svgElementHandling">
         <methods>
-          <include name="f"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="doAction"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.Test.corouselHandling -->
+      </class> <!-- com.Test.svgElementHandling -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

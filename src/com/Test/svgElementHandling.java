@@ -21,7 +21,7 @@ public class svgElementHandling {
 	private void clickCity(String cityName) throws InterruptedException {
 		driver.switchTo().frame(driver.findElement(By.xpath("//div[@class='capc-map-embed mode-widget']//child::iframe[starts-with(@id,'map-instance')]")));
 //		driver.switchTo().frame("map-instance-19220");
-		String xPathForCities = "//*[name()='svg']//*[local-name()='g' and @class='region' and @id='"+cityName+"']";
+		String xPathForCities = "//*[name()='svg']//*[local-name()='g' and @class='region' and @id='"+cityName.toLowerCase()+"']";
 		
 		driver.findElement(By.xpath(xPathForCities)).click();
 		Thread.sleep(3000);

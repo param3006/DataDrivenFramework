@@ -1,5 +1,6 @@
 package com.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -11,6 +12,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -35,15 +37,21 @@ public class filterSelection {
 		selectFilter("Deals", "all");
 		
 		selectFilter("Brands", "Apple","Nokia");
+		
+//		selectFilter("Operating System", "iOS","Android","AOSP");
+//		
+//		selectFilter("Network speed", "5G");
+//		
+//		selectFilter("SIM type", "eSIM");
 	}
 
 	@AfterMethod
 	public void tearDown() throws InterruptedException {
-		driver.quit();
+		//driver.quit();
 	}
 
 	private void selectFilter(String filterType, String... filterValues) throws InterruptedException {
-
+		List<WebElement> listOfFiltersSelected = new ArrayList<WebElement>();
 		Actions actions = new Actions(driver);
 
 		String xpathForFilterType;
@@ -60,6 +68,10 @@ public class filterSelection {
 							.findElements(By.xpath("//span[@class='filter-display-name']"));
 					for (WebElement filter : listOfFilters) {
 						filter.click();
+						listOfFiltersSelected = driver.findElements(By.className("filter-chips-container ng-untouched ng-pristine ng-valid ng-star-inserted"));
+						for(WebElement selectedFilterValue:listOfFiltersSelected) {
+							Assert.assertEquals(selectedFilterValue.getText(), filter);
+						}
 					}
 
 				} else {
@@ -67,6 +79,10 @@ public class filterSelection {
 							+ "') and @class='filter-display-name']";
 
 					driver.findElement(By.xpath(xpathForValues)).click();
+					listOfFiltersSelected = driver.findElements(By.className("filter-chips-container ng-untouched ng-pristine ng-valid ng-star-inserted"));
+					for(WebElement selectedFilterValue:listOfFiltersSelected) {
+						Assert.assertEquals(selectedFilterValue.getText(), filterValue);
+					}
 				}
 
 			}

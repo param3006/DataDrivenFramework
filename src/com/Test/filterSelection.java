@@ -20,7 +20,7 @@ public class filterSelection {
 	public WebDriver driver;
 
 	@BeforeMethod
-	protected void setUp() {
+	public void setUp() {
 		System.setProperty("webdriver.edge.driver",
 				"C:\\Users\\7EIIN\\git\\DataDrivenFramework\\Drivers\\msedgedriver.exe");
 		driver = new EdgeDriver();
@@ -33,6 +33,8 @@ public class filterSelection {
 	@Test
 	public void selectFilter() throws InterruptedException {
 		selectFilter("Deals", "all");
+		
+		selectFilter("Brands", "Apple","Nokia");
 	}
 
 	@AfterMethod
@@ -46,7 +48,6 @@ public class filterSelection {
 
 		String xpathForFilterType;
 		WebDriverWait wait = new WebDriverWait(driver, 20);
-//		String xpat = "//legend[contains(normalize-space(),'"+filterType+" ')]//ancestor::mat-expansion-panel-header/following-sibling::div/descendant::span[contains(.,'Other')]";
 
 		try {
 			xpathForFilterType = "//legend[normalize-space()='" + filterType + "' and @class = 'fx-flex']";

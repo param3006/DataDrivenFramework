@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-03T16:33:20 IST" name="Default suite" finished-at="2024-01-03T16:33:56 IST" duration-ms="35615">
+  <suite started-at="2024-01-09T17:23:33 IST" name="Default suite" finished-at="2024-01-09T17:24:02 IST" duration-ms="28214">
     <groups>
     </groups>
-    <test started-at="2024-01-03T16:33:20 IST" name="Default test" finished-at="2024-01-03T16:33:56 IST" duration-ms="35615">
-      <class name="com.Test.svgElementHandling">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.Test.svgElementHandling@2d52216b]" started-at="2024-01-03T16:33:20 IST" name="beforeMethod" finished-at="2024-01-03T16:33:51 IST" duration-ms="30718" status="PASS">
+    <test started-at="2024-01-09T17:23:33 IST" name="Default test" finished-at="2024-01-09T17:24:02 IST" duration-ms="28214">
+      <class name="com.Test.filterSelection">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Test.filterSelection@2d52216b]" started-at="2024-01-09T17:23:33 IST" name="setUp" finished-at="2024-01-09T17:23:59 IST" duration-ms="25278" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="doAction()[pri:0, instance:com.Test.svgElementHandling@2d52216b]" started-at="2024-01-03T16:33:51 IST" name="doAction" finished-at="2024-01-03T16:33:55 IST" duration-ms="4270" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="selectFilter()[pri:0, instance:com.Test.filterSelection@2d52216b]" started-at="2024-01-09T17:23:59 IST" name="selectFilter" finished-at="2024-01-09T17:24:02 IST" duration-ms="2883" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doAction -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.Test.svgElementHandling@2d52216b]" started-at="2024-01-03T16:33:55 IST" name="afterMethod" finished-at="2024-01-03T16:33:56 IST" duration-ms="564" status="PASS">
+        </test-method> <!-- selectFilter -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.filterSelection@2d52216b]" started-at="2024-01-09T17:24:02 IST" name="tearDown" finished-at="2024-01-09T17:24:02 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.Test.svgElementHandling -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Test.filterSelection -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

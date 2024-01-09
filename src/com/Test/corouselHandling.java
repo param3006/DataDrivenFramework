@@ -29,8 +29,8 @@ public class corouselHandling {
 	@BeforeMethod
 	public void setUp() {
 
-		System.setProperty("webdriver.edge.driver",
-				"C:\\Users\\7EIIN\\git\\DataDrivenFramework\\Drivers\\msedgedriver.exe");
+		
+
 
 		driver = new EdgeDriver();
 		driver.manage().window().maximize();
